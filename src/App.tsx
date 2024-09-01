@@ -1,6 +1,6 @@
 import { Checkbox } from "@mui/material";
-import Box from "@mui/material/Box";
 import { Grid2 as Grid } from "@mui/material";
+import Box from "@mui/material/Box";
 import "./App.css";
 
 const columns = 8;
@@ -14,6 +14,7 @@ function App() {
         <Box>
           <Grid container columns={columns} alignItems="center">
             {Array.from(Array(checkboxes)).map((_, index) => (
+              // biome-ignore lint/suspicious/noArrayIndexKey: No id
               <Grid key={index} size={1}>
                 <Checkbox />
               </Grid>

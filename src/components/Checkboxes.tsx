@@ -1,6 +1,4 @@
-import { Checkbox } from "@mui/material";
-import { Grid2 as Grid } from "@mui/material";
-import Box from "@mui/material/Box";
+import { Box, Checkbox, Grid2 as Grid } from "@mui/material";
 
 interface CheckboxesProps {
   columns: number;

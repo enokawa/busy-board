@@ -2,7 +2,7 @@ import type React from "react";
 import { useState } from "react";
 import "./App.css";
 import { Box, Grid2 as Grid } from "@mui/material";
-import { Checkbox, ProgressBar } from "./components";
+import { Checkbox, ProgressBar, Slider } from "./components";
 
 const defaultColumnCount = 8;
 const defaultCheckboxCount = defaultColumnCount * 10;
@@ -34,6 +34,12 @@ function App() {
               </Grid>
             ))}
           </Grid>
+        </Box>
+        <Box>
+          <Slider color="warning" />
+          <Slider value={50} color="secondary" />
+          <Slider value={80} />
+          <Slider value={10} color="error" />
         </Box>
       </div>
     </>

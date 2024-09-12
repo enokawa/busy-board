@@ -1,7 +1,11 @@
-import { Slider as MuiSlider } from "@mui/material";
+import { Slider as MuiSlider, type SliderOwnProps } from "@mui/material";
 
-export const Slider = () => {
-  return <MuiSlider defaultValue={30} color="warning" />;
+type SliderProps = SliderOwnProps & {
+  value?: number;
+};
+
+export const Slider = ({ value = 30, ...props }: SliderProps) => {
+  return <MuiSlider {...props} defaultValue={value} />;
 };
 
 export default Slider;
